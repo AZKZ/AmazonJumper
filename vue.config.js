@@ -26,5 +26,5 @@ module.exports = {
   configureWebpack: {
     devtool: 'source-map'
   },
-  publicPath: './'
+  publicPath: process.env.NODE_ENV === 'production' ? '/pwa-sample/' : './'
 }
