@@ -1,13 +1,12 @@
 module.exports = {
   pwa: {
-    name: 'amazon Jumper',
+    name: 'Amazon Jumper',
     themeColor: '#ffd700',
     msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
     assetsVersion: '0.1',
     manifestOptions: {
-      start_url: '/index.html',
       icons: [
         {
           src: '/img/icons/icon-192x192.png',
@@ -28,4 +27,4 @@ module.exports = {
   },
   publicPath: process.env.NODE_ENV === 'production' ? '/AmazonJumper/' : './',
   outputDir: 'docs'
-}
+};

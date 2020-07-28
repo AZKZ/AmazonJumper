@@ -1,6 +1,6 @@
 <template>
   <div id='app'>
-    <Title text='amazon Jumper' />
+    <Title text='Amazon Jumper' />
     <BarcodeReader />
   </div>
 </template>
