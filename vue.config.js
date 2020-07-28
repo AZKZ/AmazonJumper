@@ -26,6 +26,6 @@ module.exports = {
   configureWebpack: {
     devtool: 'source-map'
   },
-  publicPath: process.env.NODE_ENV === 'production' ? '/pwa-sample/' : './',
+  publicPath: process.env.NODE_ENV === 'production' ? '/AmazonJumper/' : './',
   outputDir: 'docs'
 }
