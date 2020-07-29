@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AmazonJumper/precache-manifest.610499b4fb6cab1995e9d4f4f5ec80f5.js"
+  "/AmazonJumper/precache-manifest.b2c856de4b48ed5289368b6e09f69d5d.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "amazon-jumper"});

@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0aeed4790baac4e27b2a",
+    "revision": "bf0a0ee664cc70d714ad",
     "url": "/AmazonJumper/css/app.83541bb1.css"
   },
   {
-    "revision": "1102a187008ff8e3e9af326eae36c533",
+    "revision": "1d954bf5f764887a1313f985e3285aaa",
     "url": "/AmazonJumper/index.html"
   },
   {
-    "revision": "0aeed4790baac4e27b2a",
-    "url": "/AmazonJumper/js/app.801088ec.js"
+    "revision": "bf0a0ee664cc70d714ad",
+    "url": "/AmazonJumper/js/app.a2beed98.js"
   },
   {
-    "revision": "38a25e62c4c31eac643c",
-    "url": "/AmazonJumper/js/chunk-vendors.2651ecec.js"
+    "revision": "d7e0d04f257b4aae7b23",
+    "url": "/AmazonJumper/js/chunk-vendors.e61e3415.js"
   },
   {
     "revision": "647f460c438e082f1613b8c052440dba",

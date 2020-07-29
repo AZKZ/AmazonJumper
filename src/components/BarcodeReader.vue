@@ -2,7 +2,6 @@
   <div id='barcodeReader'>
     <video id='video' width='300' height='200' style='border: 1px solid gray'></video>
     <p>{{barcodeText}}</p>
-    <button v-on:click='readBarcode'>start</button>
   </div>
 </template>
 
@@ -23,24 +22,22 @@ export default {
       this.selectedDeviceId = videoInputDevice[0].deviceId
     })
   },
-  methods: {
-    readBarcode: function () {
-      this.barcodeText = ''
+  mounted: async function () {
+    this.barcodeText = ''
 
-      this.codeReader
-        .decodeOnceFromVideoDevice(this.selectedDeviceId, 'video')
-        .then((result) => {
-          this.codeReader.reset()
-          this.barcodeText = result
-          // ISBNコードの場合はAmazon検索結果へジャンプする
-          if (result.text.substr(0, 2) === '97') {
-            window.location.href = 'https://www.amazon.co.jp/s?k=' + result.text
-          }
-        })
-        .catch((error) => {
-          console.log(error)
-        })
+    while (true) {
+      const result = await this.codeReader.decodeFromInputVideoDevice(
+        this.selectedDeviceId,
+        'video'
+      )
+      this.barcodeText = result
+      // ISBNコードの場合はAmazon検索結果へジャンプする
+      if (result.text.substr(0, 2) === '97') {
+        window.location.href = 'https://www.amazon.co.jp/s?k=' + result.text
+        break
+      }
     }
+    await this.codeReader.reset()
   }
 }
 </script>
