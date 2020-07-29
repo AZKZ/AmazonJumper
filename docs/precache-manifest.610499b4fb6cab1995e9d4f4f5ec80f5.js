@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AmazonJumper/js/chunk-vendors.2651ecec.js"
   },
   {
-    "revision": "94e1fb3afbaab4eafb0e6f53a8d0c72f",
+    "revision": "647f460c438e082f1613b8c052440dba",
     "url": "/AmazonJumper/manifest.json"
   },
   {
